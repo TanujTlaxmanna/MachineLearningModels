@@ -7,11 +7,11 @@ y = []
 
 print("Enter X values:")
 for i in range(n):
-    x.append(float(input(f"Value at X[{i+1}] = ")))
+    x.append(int(input(f"Value at X[{i+1}] = ")))
 
 print("Enter Y values:")
 for i in range(n):
-    y.append(float(input(f"Value at Y[{i+1}] = ")))
+    y.append(int(input(f"Value at Y[{i+1}] = ")))
 
 
 sum_x = sum(x)
