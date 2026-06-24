@@ -36,4 +36,12 @@ print(f"Y = {m:.4f}X + {c:.4f}")
 x_pred = float(input("\nEnter X value to predict Y: "))
 y_pred = m * x_pred + c
 
-print(f"Predicted Y = {y_pred:.4f}") 
+print(f"Predicted Y = {y_pred:.4f}")
+
+sse = 0
+
+for i in range(n):
+    y_hat = m * x[i] + c
+    sse += (y[i] - y_hat) ** 2
+
+print(f"SSE = {sse:.4f}")
